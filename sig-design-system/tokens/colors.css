@@ -1,0 +1,39 @@
+:root {
+  /* Base palette — from SIG 2025 Brand Manual + deck usage */
+  --navy: #0d324f;        /* primary dark — headings, bars, dark slides */
+  --nln: #2b5c81;         /* mid navy — large stats, table emphasis */
+  --blue: #2789b9;        /* SIG blue — eyebrows, links, accents */
+  --sky: #7fc4e8;         /* light blue — kicker text on navy */
+  --orange: #f7991c;      /* Offer Orange — SMALL BITES ONLY (labels, numerals, one stat) */
+  --slate: #e4e9eb;       /* light section background */
+  --iron: #46545b;        /* body text on white */
+  --mut: #6f7d86;         /* muted text on white */
+  --mut-dark: rgba(255,255,255,0.62); /* muted text on navy */
+  --line: #d4dce1;        /* hairlines on white */
+  --line-dark: rgba(255,255,255,0.18); /* hairlines on navy */
+  --zebra: rgba(43,92,129,0.05);       /* table row striping */
+
+  /* Semantic aliases */
+  --text-heading: var(--navy);
+  --text-body: var(--iron);
+  --text-muted: var(--mut);
+  --surface-page: #ffffff;
+  --surface-section: var(--slate);
+  --surface-dark: var(--navy);
+  --accent-primary: var(--blue);
+  --accent-highlight: var(--orange);
+
+  /* Placeholder (fill-in) fields — light slides */
+  --ph-c: #1b6a94;
+  --ph-bg: rgba(39,137,185,0.10);
+  --ph-b: rgba(39,137,185,0.5);
+  /* Placeholder fields — dark slides */
+  --phd-c: #9fd2ec;
+  --phd-bg: rgba(39,137,185,0.25);
+  --phd-b: rgba(159,210,236,0.55);
+
+  /* Gradients */
+  --grad-divider: linear-gradient(120deg,#0d324f 0%,#123a5b 60%,#2b5c81 100%);
+  --grad-cover: linear-gradient(135deg,#0d324f 0%,#2b5c81 100%);
+  --grad-summary: linear-gradient(135deg,#0d324f 0%,#1b4568 100%);
+}

@@ -1,0 +1,9 @@
+:root {
+  /* No shadows, no corner radii — SIG slides are flat and squared */
+  --radius: 0px;
+  --rule-heavy: 2px solid var(--navy);   /* table header rule */
+  --rule-total: 3px solid var(--navy);   /* totals / top-of-grid rule */
+  --rule-hair: 1px solid var(--line);
+  --card-accent: 5px solid var(--orange); /* white card top border */
+  --pad-slide: 84px 100px 64px;           /* standard slide padding */
+}
