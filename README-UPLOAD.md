@@ -9,7 +9,7 @@ Source deck: Shriber Family NNN Gas Portfolio BOV (Sep 2026)
 3. Drag in every .html file from this zip's `sig-design-system/slides/` folder
 4. Repeat for `sig-design-system/assets/team/` (create the folder by typing `team/` in the upload path)
 5. Replace `sig-design-system/readme.md` with the copy in this zip
-6. Commit message: "Add Why-SIG slide set + ship-state standards from Shriber BOV"
+6. Commit message: "Add Why-SIG slide set, comps + pricing specs, and ship-state standards from Shriber BOV"
 
 ## New slides
 - **Why-SIG-Divider.html** — section divider for the credentials block
@@ -21,6 +21,9 @@ Source deck: Shriber Family NNN Gas Portfolio BOV (Sep 2026)
 - **Debt-Facility-Detail.html** — INCLUDE ONLY ON REQUEST. Facility draws, cash at close, payoff placeholders
 
 ## Overwrites existing repo files
+- **Comps-On-Market.html** — rebuilt to the 14-column spec, DOM-ascending order, pinned subject rows, emphasized average row
+- **Comps-Sold.html** — same, plus the sold-date column (15 columns), most recent first
+- **Pricing-Matrix.html** — three scenarios at .25% spreads, one matrix per package, pro-rata per-property allocation
 - **Buyer-Universe.html** — database figure corrected to 50,000+ (the 72,000 in the current file is unsourced); third card now covers shared-database/broker cooperation across 10 offices
 - **Confidentiality-Agreement.html** — full three-paragraph legal closer; delete the old short `Confidentiality.html`
 - **readme.md** — adds seven new standards under CONTENT FUNDAMENTALS (see below)
@@ -36,3 +39,5 @@ Source deck: Shriber Family NNN Gas Portfolio BOV (Sep 2026)
 5. Debt and net-proceeds slides are opt-in, not default
 6. Comp table conventions — subject rows pinned, on-market ordered by DOM ascending
 7. Footer consistency — "Sands Investment Group | Confidential · sandsig.com" plus the SIG icon on every content slide
+8. Comp tables — fixed 14/15-column spec, pinned subject rows, re-derived averages
+9. Pricing analysis — three scenarios at .25% spreads, one matrix per package, pro-rata allocation labelled analysis-only
