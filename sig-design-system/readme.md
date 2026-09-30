@@ -16,7 +16,7 @@ Design system for **Sands Investment Group (SIG)**, a commercial real estate adv
 ## CONTENT FUNDAMENTALS
 - **Tone: factual, never salesy.** No urgency framing ("the time is now", "window is closing"), no imperatives, no exclamation points. State the data and let it argue: "Market conditions are measurable", not "Act now".
 - **Titles are topic labels or neutral statements of fact** in Roboto Condensed 700: "Four Things Drive Your Value", "What Buyers Actually Paid".
-- **Voice:** first-person plural "we" for SIG; direct "you/your" for the owner. Sophisticated but plain-English — sentences a non-real-estate spouse could follow, precision a CPA would respect ("bps", "EBITDAR", "boot" are fine, defined by context).
+- **Voice:** first-person plural "we" for SIG; **no second person** — "the ownership structure," not "how you own it" (see CONVENTIONS.md). Sophisticated but plain-English — sentences a non-real-estate spouse could follow, precision a CPA would respect ("bps", "EBITDAR", "boot" are fine, defined by context).
 - **Numbers carry the argument.** Every claim quantified; every figure traceable to a source (SIG market report, closed comps, the underwriting model). No invented statistics.
 - **Placeholders:** all per-deal data appears as bracketed uppercase fields — `[TENANT NAME]`, `[$0,000,000]`, `[0.00%]` — styled with the placeholder treatment so unfilled fields are impossible to miss.
 - **No emoji, ever.** Unicode ▼/▲ only as data-direction markers in stat blocks.
@@ -24,9 +24,9 @@ Design system for **Sands Investment Group (SIG)**, a commercial real estate adv
 - Case studies are anonymized on request ("a Southern California Ford dealer"); never overstate SIG's role in a deal.
 
 ## VISUAL FOUNDATIONS
-- **Colors:** navy #0d324f is the anchor (dark slides, bars, headings); SIG blue #2789b9 for eyebrows/accents; mid-navy #2b5c81 for large numerics. **Offer Orange #f7991c appears on every slide but only in small bites** — eyebrow labels on navy, step numerals, one highlighted stat, 5px card top borders. Slate #e4e9eb as an alternate light section background.
+- **Colors:** navy #0d324f is the anchor (dark slides, bars, headings); SIG blue #2789b9 for eyebrows/accents; mid-navy #2b5c81 for large numerics. **Offer Orange #f7991c appears on every slide but only in small bites** — eyebrow labels on navy, step numerals, one highlighted stat, 5px card top borders. Slate #e4e9eb is a tint for cards and bands only — never a slide background (see CONVENTIONS.md).
 - **Type:** Roboto Condensed 700 for ALL headlines, labels, and numerics; Roboto 300 for body. Slide floor is 24px (1920×1080). Dividers: uppercase 120px titles with 0.55em-tracked kickers.
-- **Backgrounds:** flat white or slate for content; navy gradients (120–135°, #0d324f → #2b5c81) for cover, dividers, and emphasis slides. No imagery backgrounds; photos live in rectangular `<image-slot>` drop zones.
+- **Backgrounds:** flat white for content; navy gradients (120–135°, #0d324f → #2b5c81) for cover, dividers, and emphasis slides. No imagery backgrounds; photos live in rectangular `<image-slot>` drop zones.
 - **Layout:** 84px 100px 64px slide padding; CSS grid with generous gaps; hairline column separators (1px --line / --line-dark). Footers pinned with margin-top:auto.
 - **Tables** are the signature element: 2px navy header rule, uppercase condensed headers (0.08em), hairline rows, zebra striping rgba(43,92,129,0.05), right-aligned numerics in Condensed, subject row orange-tinted at top, average/total row bold over a 3px navy rule.
 - **Corners & shadows: none.** Everything squared and flat. Cards are white with 1px hairline border + 5px orange top border, or solid navy. Emphasis via background tint rgba(43,92,129,0.07), never shadow.
@@ -41,7 +41,7 @@ Design system for **Sands Investment Group (SIG)**, a commercial real estate adv
 ## Index
 - `styles.css` → `tokens/` (fonts, colors, typography, effects)
 - `components/core/` — Eyebrow, SlideTitle, PlaceholderField, KeyTakeawayBar, StatBand, InfoCard, SlideFooter, SigTable (each with .d.ts + .prompt.md)
-- `slides/` — the full 34-slide bank as standalone HTML templates (cards + starting points): cover, agenda, 6 section dividers, market conditions, comps, asset formats, options grid, offering, tenant overview, value drivers, lease abstract, on-market + sold comps, valuation summary, sensitivity, pricing matrix, 1031 timeline, buy box, track record, buyer universe, case study (2), selected transactions, bidding process, retail execution timeline, summary, ask, team, confidentiality
+- `slides/common|bov|1031|services/` — the slide bank, split by deck; `../../CONVENTIONS.md` and `../../decks/` hold the rules and locked orders
 - `guidelines/` — foundation specimen cards
 - `assets/` — logo set
 - `Dealership BOV Proposal v2.dc.html` — the live working deck the bank was extracted from

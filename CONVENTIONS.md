@@ -326,3 +326,50 @@ second line outside the box, and appears to vanish.
   aligns after Google Slides export, where a two-line heading otherwise pushes its column down.
 - **Team contact lines are separate full-width boxes**, one line each. A stacked `<br>` block is
   flattened by the Slides export and the phone line drops out of the box.
+
+## Locked 2026-09-29 — structure and conflict resolutions
+
+**The BOV structure is fixed.** `decks/bov.md` is the slide order for every BOV. It does not vary
+from deal to deal unless the broker explicitly asks. Inside a slide, the only per-deal variation is
+row count — rent roll / option periods and the landlord–tenant obligation split. Everything else is
+the template verbatim with bracketed fields filled.
+
+Where older notes in this repo (the Sept 1 readme, the Shriber upload notes) disagreed with this
+file, the following now stands:
+
+- **Voice: no second person.** "The ownership structure," never "how you own it." The Sept 1
+  readme's "direct you/your for the owner" is retired.
+- **No slate background.** Content slides are white; cover, dividers and the closer are navy
+  gradient. Slate `#e4e9eb` is no longer a slide background.
+- **Comps tables: 12 columns maximum**, seven rows. The earlier 14/15-column spec is retired.
+- **Tenant logo:** the template ships an `<image-slot id="tenant-logo">` drop zone. When a deal is
+  filled, the mark becomes a plain `<img>` of an opaque-white-matted PNG at `height:112px`,
+  identical on every placement — never left as a filled image-slot (grey plate on export).
+- **Track Record is the four-reasons slide** (`Track-Record-Product-Type`). The older dealership
+  stats table and the firm-level stat band are retired; firm figures live on By the Numbers, and
+  1031 firm figures on `1031/1031-Firm-Stats` for the exchange deck.
+- **Buyer Universe database figure is 50,000+.** The 72,000 figure was unsourced.
+- **Confidentiality is the full three-paragraph closer** (`Confidentiality-Agreement`), on the navy
+  divider background, no footer. The short version is retired.
+- **READ and Key Takeaway bars: two sentences maximum.**
+- **Methodology qualifiers are asterisk footnotes**, one line, above the footer.
+- **One headline cap rate per deal**, anchored to the pricing rent basis (current rent unless the
+  broker chooses the step). The same cap appears wherever the headline number is shown.
+- **Ship state:** a client-facing deck carries no `[TBD]`, no bracket, no document-status
+  language. An unknown that must stay on the page is an em dash.
+- **Debt and net-proceeds slides are opt-in.** No debt, no Capital Structure and no Net Proceeds.
+
+## Repo layout (from 2026-09-29)
+
+```
+BOV-Template.dc.html         the master; deck-stage.js, image-slot.js and assets/ sit beside it
+CONVENTIONS.md               this file — brand, layout, copy and BOV rules
+decks/bov.md                 the locked BOV slide order
+sig-design-system/           tokens, styles.css, components, guidelines, assets (incl. assets/team)
+  slides/common/             cover, dividers, credentials, team, marketing, closer — shared by all decks
+  slides/bov/                the BOV deal slides
+  slides/1031/               the 1031 exchange deck slides
+  slides/services/           case studies, process and market slides for the Our Services deck
+```
+
+Slide templates reference `../../styles.css`, `../../assets/` and `../../image-slot.js`.
