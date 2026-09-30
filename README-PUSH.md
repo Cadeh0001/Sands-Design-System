@@ -1,4 +1,25 @@
+# BOV push — 2026-09-29 update
+
+**Supersedes the file list below.** Commit everything in this folder to the REPO ROOT, overwriting
+same-named files. Delete the stray `repo-push/` folder from the 9/22 commit once these land.
+
+- **Overwrite at root:** CONVENTIONS.md (superset), Comps-On-Market, Comps-Sold, Pricing-Matrix,
+  Marketing-Plan-Timeline, Track-Record-Product-Type, By-the-Numbers, Buyer-Universe,
+  Team-Three-Profiles, Confidentiality-Agreement, Why-SIG-Divider.
+- **New at root:** BOV-Template.dc.html (the master — expects deck-stage.js, image-slot.js and
+  assets/ beside it), Cover, Agenda, Current-Situation, Asset-Detail, Lease-Abstract,
+  Tenant-Overview, Ask-vs-Close.
+- **Untouched:** sig-design-system/, slides/, github-upload 2/, Debt-Facility-Detail,
+  Net-Proceeds-Waterfall, headshots, readme.md, README-UPLOAD.md.
+
+---
+
 # Repo push — BOV layout
+
+> **These files belong at the REPO ROOT, not in a `repo-push/` folder.** The previous commit landed
+> them under `repo-push/`, so root `CONVENTIONS.md` and the five root slide templates were never
+> overwritten and still carry the old versions. Move/commit these at the top level, then delete
+> `repo-push/` from the repo.
 
 Thirteen slide templates plus CONVENTIONS.md, all at the repo root. **Nothing is deleted.** Files not
 listed here — Buyer-Universe, Team-Three-Profiles, Confidentiality-Agreement, Why-SIG-Divider,
@@ -28,6 +49,29 @@ as committed.
 | `Track-Record-Product-Type.html` | Four numbered reasons replace the three stat tiles, which duplicated By the Numbers |
 | `By-the-Numbers.html` | Second supporting stat band; both bands flex to share leftover height |
 | `CONVENTIONS.md` | See below |
+
+## How this lands
+
+This push is **authoritative over what is in the repo today, and additive to everything else.**
+
+- `CONVENTIONS.md` **replaces** the root copy. It is a superset: every rule the old 4.5 KB version
+  carried is still in it, verbatim or tightened, plus everything settled since. Two rules changed
+  rather than grew — guarantor format now covers rated corporate credit alongside the operator
+  `(unit count)` form, and demographics moved onto the Asset slide instead of the backup file.
+  Both are marked as overrides in the file.
+- The 6 template files listed below **replace** their root counterparts.
+- The 7 new templates are **additions**.
+- Everything else in the repo is **untouched** — `sig-design-system/`, `slides/`,
+  `github-upload 2/`, the headshots, `readme.md`, and every template not named below.
+
+## Rules added since the last commit
+
+- **The comps subject row carries no pricing** — Price, $/SF and Cap are dashes; rent, NOI, term,
+  structure, land, year built and guarantor fill in. An ask printed beside the comp set reads as
+  though the comps set it.
+- **Sort is not optional** — on-market by days on market ascending, sold by close date descending.
+  Never by tenant, geography or cap rate.
+- **No speaker notes ship** — `data-speaker-notes` is a drafting aid; strip every one before handoff.
 
 ## What CONVENTIONS.md gained
 
